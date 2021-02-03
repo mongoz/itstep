@@ -4,7 +4,7 @@ quote = "\"Можливо все, неможливе просто потребу
         "\"\nДен Браун"
 oceans = ["Pacific", "Atlantic",
           "Indian", "Southern", "Arctic"]
-active = True
+active = "True"
 naming = ("i", "t", "s", "t", "e", "p")
 school = {
     "students amount": 5,
@@ -14,6 +14,7 @@ school = {
     "subjects":
         ("Python", "Math", "English", "Kung-Fu")
 }
+
 print(current_year)
 print(light_speed_in_vacuum)
 print(quote)
