@@ -1,14 +1,16 @@
-a = int(input("Enter a number:\n"))
-if a % 2 == 0:
-   print(f"{a} is positive even number ")
-else:
-   print(f"{a} is positive Odd number")
+a: int = int(input("Enter the integer number\n\t"))
+if a % 2 == 0 and a >0:
+    smile_parity = "Even positive number"
+    print(a, "is the", smile_parity)
+elif a % 2 != 0 and a >0:
+    smile_parity = "Odd positive number"
+    print(a, "is the", smile_parity)
+elif a % 2 == 0:
+    smile_parity = "Even negative number"
+    print(a, "is the", smile_parity)
+elif a % 2 != 0:
+    smile_parity = "Odd negative number"
+    print(a, "is the", smile_parity)
 
 
-
-
-
-
-# Голову ламаю, никак не могу правильно написать.
-# Как быть в случае, если a < 0
 
