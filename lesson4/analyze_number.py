@@ -11,6 +11,3 @@ elif a % 2 == 0:
 elif a % 2 != 0:
     smile_parity = "Odd negative number"
     print(a, "is the", smile_parity)
-
-
-
