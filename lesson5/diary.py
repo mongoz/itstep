@@ -1,9 +1,3 @@
-# day
-# =
-# ["Sunday","Monday", "Tuesday", "Wednesday",
-# "Thursday",
-# "Friday",
-# "Saturday"]
 
 day = int(input("Enter the day \n"))
 task = [

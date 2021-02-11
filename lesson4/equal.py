@@ -1,4 +1,3 @@
-
 msg = "Am i a Joke to You?"
 E = "Equals"
 try:
