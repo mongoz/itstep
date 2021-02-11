@@ -1,4 +1,4 @@
-num = int(input("Enter the number of rows:\n"))
+num = 15
 for i in range(0,num):
     for j in range(0,num-i-1):
         print(end=" ")
