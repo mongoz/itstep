@@ -11,3 +11,16 @@ try:
         print(f"{a} > {b}", sep='\t')
 except ValueError:
     print(msg)
+
+# МОЖНО ЕЩЁ ТАК
+# a = int(input("enter:  "))
+# b = int(input("enter:   "))
+# Проверить условие
+# if a == b:
+#  print("equal")
+# elif a > b:
+#  print(f'{a} , {b}')
+# elif a < b:
+#  print(f'{b}, {a}')
+# else:
+#  print("Am i Joke to YOU")

@@ -15,5 +15,4 @@ b = int(input("Enter number of month\n"))
 if b <= 12:
     print(a[b])
 else:
-    if b >= 12:
-        print(msg)
+    print(msg)
