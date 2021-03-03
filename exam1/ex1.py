@@ -1,5 +1,5 @@
 num = input()
 try:
-    x = input(num)
+    x = int(num)
 except:
     print("Wrong Input")
