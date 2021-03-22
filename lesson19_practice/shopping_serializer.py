@@ -1,4 +1,5 @@
 import json
+import pickle
 shopping_list_example = [
     {
         "bread": 1.2,
@@ -21,3 +22,6 @@ shopping_list_example = [
 
 with open('shopping_list.json', 'w', encoding='utf8') as outfile:
     json.dump(shopping_list_example, outfile)
+
+
+pickle.dump(shopping_list_example, open("shopping_list.pkl", "wb"))
