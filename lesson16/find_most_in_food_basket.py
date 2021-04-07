@@ -13,8 +13,9 @@ big_basket = {
 
 
 def find_most_in_food_basket(food_basket, max_cost=True):
+    set_food = set(food_basket)
+    return set_food
 
 
-
-print(f"Mаксимальная цена за {find_most_in_food_basket(big_basket)}")
+print(f"{find_most_in_food_basket(big_basket)}")
 
