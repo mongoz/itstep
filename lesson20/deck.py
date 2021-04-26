@@ -10,14 +10,15 @@ class Deck:
         print(f"Перетасованая колода: \n{cards}")
 
     def take_cards(self, card_del, card):
-        for i in range(0, len(self._card)):
-            if card_del == i:
-                card.remove(card_del)
-                print(f'Новая колода: {self._card}')
+        card.remove(card_del)
+        return card
+
+    def __str__(self):
+        return f"Новая колода: \n{self._card}"
 
 
 card_example = [('A', 'Spades'), ('K', 'Clubs'), (10, 'Diamonds'),
                 (5, 'Hearts')]
 deck = Deck(card_example)
 deck.shuffle(card_example)
-deck.take_cards(('A', 'Spades'), card_example)
+print(f"Новая колода: {deck.take_cards(('A', 'Spades'), card_example)}")
