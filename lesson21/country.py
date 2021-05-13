@@ -8,16 +8,10 @@ class Country:
 
     def set_capital(self, capital):
         if str(capital):
-            for i in capital:
-                if i[0].issupper():
-                    self._capital = capital
-                    break
-                else:
-                    print("Incorrect input."
-                          " Right answer is London.")
-                    break
-            else:
-                print('Incorrect input.')
+            return self._capital
+        else:
+            print("Incorrect input."
+                  " Right answer is London.")
 
     def set_continent(self, continent):
         self._continent = continent
@@ -30,9 +24,6 @@ class Country:
 
     def set_city_2(self, city_2):
         self._city_2 = city_2
-
-    def get_capital(self):
-        return self._capital
 
     def get_continent(self):
         return self._continent
@@ -49,6 +40,11 @@ class Country:
 
 def main():
     capital = input("Enter the capital of Great Britain: ")
+    if str(capital):
+        if capital == 'London':
+            return False # как здесь перешагнуть дальше , потому  что ввожу правильно,
+    else:
+        return True
     continent = input("Enter the continent: ")
     population = float(input("Enter the population of London by 2019: "))
     city_1 = input('Enter random city 1: ')
@@ -58,13 +54,16 @@ def main():
 
     print('Your entered Data')
     print()
-    print(f"Capital of Great Britain: {country.get_capital()}\n "
+    print(f"Capital of Great Britain: {country.set_capital(capital)}\n "
           f"Continent: {country.get_continent()}\n"
           f"Population: {country.get_population()}\n"
           f"City 1: {country.get_city_1()}\n"
           f"City 2: {country.get_city2()}")
 
 
+"""
+Валидацию также необходимо выполнять и вовремя выполнения главной функции не только,  когда пишу класс
+"""
 main()
 
 # Траблы с этой Валидацией не понимаю что нужно как ее правильно описать
