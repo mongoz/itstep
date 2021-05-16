@@ -23,7 +23,7 @@ class Army:
             return Army(0, self.damage_per_warrior, self.warrior_health)
 
 
-class OrkArmy(Army):
+class Ork(Army):
     def receive_damage(self, damage_per_warrior: int):
         rip_ork = (self.warrior_amount * self.warrior_health / damage_per_warrior)
         if self.warrior_amount > rip_ork:
@@ -33,7 +33,7 @@ class OrkArmy(Army):
             return self.warrior_amount
 
 
-class ElfArmy(Army):
+class Elf(Army):
     def __init__(self, warrior_amount, damage_per_warrior, warrior_health, shield):
         Army.__init__(self, warrior_amount, damage_per_warrior, warrior_health)
         self.shield = shield
