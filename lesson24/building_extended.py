@@ -1,5 +1,6 @@
-rom building import Building
+from building import Building
 from apartment import Apartment
+
 
 class BuildingExtended(Building):
 
